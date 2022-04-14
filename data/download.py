@@ -22,8 +22,6 @@ for k in _down_range:
             date = _date.strftime("%Y%m%d")
             sst_aqua_pattern = f"AQUA_MODIS.{date}.L3m.DAY.SST.sst.4km.nc"
             print(sst_aqua_pattern)
-            # p = os.popen(f"wget -O {sst_aqua_pattern} {url}{sst_aqua_pattern}?appkey={API_KEY}")
+            p = subprocess.popen(f"wget -O {sst_aqua_pattern} {url}{sst_aqua_pattern}?appkey={API_KEY}", shell=True)
     print("\n")
-
-
-# p.wait()
+    p.wait()

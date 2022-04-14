@@ -79,7 +79,7 @@ def httpdl(server, request, localpath='.', outputfilename=None, ntries=5,
             ofile = localpath / outputfilename
             modified_since = get_file_time(ofile)
         else:
-            rpath = Path(request.rstrip()).name
+            rpath = Path(request.rstrip())
             if 'requested_files' in request:
                 rpath = Path(request.rstrip().split('?')[0])
             ofile = localpath / rpath.name
@@ -243,7 +243,7 @@ NOTE: For authentication, a valid .netrc file in the user home ($HOME) directory
     parser.add_argument('--uncompress',action="store_true",
                         help='uncompress the retrieved files (if compressed)',
                         default=False)
-    parser.add_argument('--appkey',help='value of the users application key')
+    parser.add_argument('--appkey',help='value of the users application key', required=False)
     parser.add_argument('--force',action='store_true',
                         help='force download even if file already exists locally',
                         default=False)
@@ -277,6 +277,7 @@ NOTE: For authentication, a valid .netrc file in the user home ($HOME) directory
         print("Output directory: %s" % outpath)
 
     for request in filelist:
+        print(request)
         status = retrieveURL(request,localpath=outpath, uncompress=args.uncompress,
                              verbose=args.verbose,force_download=args.force,
                              appkey=args.appkey)
