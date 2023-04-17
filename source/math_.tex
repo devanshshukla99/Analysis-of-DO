@@ -1,0 +1,62 @@
+\newcommand{\Lagr}{\mathcal{L}}
+\newcommand{\ddt}{\frac{d}{dt}}
+\newcommand{\ddtf}[1]{\frac{d #1}{dt}}
+\newcommand{\pdt}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\half}{\frac{1}{2}}
+
+% {\def\beq{\begin{equation}}}
+\newcommand{\beq}{\begin{equation}}
+\newcommand{\eeq}{\end{equation}}
+\newcommand{\beqs}{\begin{eqnarray}}
+\newcommand{\eeqs}{\end{eqnarray}}
+\newcommand{\dd}[2]{\frac{d #1}{d #2}}
+\newcommand{\pd}[1]{\partial_{#1}}
+\newcommand{\matrixrep}[5]{
+	\[
+		#1 = 
+		\begin{pmatrix}
+			#2 & #3 \\
+			#4 & #5 
+		\end{pmatrix}
+	\]
+}
+\newcommand{\metricrep}[5]{
+    \[
+        #1 = 
+        \begin{pmatrix}
+            #2 & 0 & 0 & 0 \\
+            0 & #3 & 0 & 0 \\
+            0 & 0 & #4 & 0 \\
+            0 & 0 & 0 & #5 \\
+        \end{pmatrix}\]
+}
+\newcommand{\covard}[1]{
+	\tensor{\nabla}{_ #1}
+}
+\newcommand{\christoffel}[1]{
+	\tensor{\Gamma}{#1}
+}
+\newcommand{\metric}[1]{
+	\tensor{g}{ #1 }
+}
+\newcommand{\kdelta}[2]{
+	\tensor{\delta}{_#1}{^#2}
+}
+\newcommand{\dx}[1]{
+	\tensor{dx}{^#1}
+}
+\newcommand{\ddtau}[1]{
+	\dfrac{d#1}{d\tau}
+}
+\newcommand{\drv}[2]{
+	\tensor{\partial}{_#1} #2
+}
+\newcommand{\braket}{
+	\mathbf{[}
+}
+\newcommand{\riemann}[1]{
+	\tensor{R}{ #1 }
+}
+\newcommand{\ricci}[1]{
+	\tensor{R}{ #1 }
+}

@@ -1,0 +1,25 @@
+\contentsline {section}{\numberline {I}Introduction}{3}{section.0.1}
+\contentsline {paragraph}{Motivation}{3}{section.0.1}
+\contentsline {section}{\numberline {II}Data \& Methodology}{3}{section.0.2}
+\contentsline {paragraph}{}{3}{section.0.2}
+\contentsline {subsection}{\numberline {II.I}In-situ data: USGS WaterQualityWatch}{4}{subsection.0.2.1}
+\contentsline {paragraph}{Introduction}{4}{subsection.0.2.1}
+\contentsline {paragraph}{Data processing}{4}{figure.caption.4}
+\contentsline {paragraph}{NOTE:}{5}{figure.caption.6}
+\contentsline {subsection}{\numberline {II.II}Remote data: Aqua-MODIS}{5}{subsection.0.2.2}
+\contentsline {paragraph}{Introduction}{5}{figure.caption.7}
+\contentsline {paragraph}{Specification}{5}{figure.caption.8}
+\contentsline {paragraph}{Data processing}{6}{figure.caption.8}
+\contentsline {subsubsection}{Sea Surface Temperature (SST)}{6}{figure.caption.8}
+\contentsline {paragraph}{Monthly averaged}{7}{figure.caption.10}
+\contentsline {subsubsection}{Chlorophyll}{8}{figure.caption.11}
+\contentsline {subsection}{\numberline {II.III}Methodology}{9}{subsection.0.2.3}
+\contentsline {paragraph}{}{9}{subsection.0.2.3}
+\contentsline {section}{\numberline {III}Analysis}{9}{section.0.3}
+\contentsline {subsection}{\numberline {III.I}Field data}{9}{subsection.0.3.1}
+\contentsline {paragraph}{Correlation with dissolved oxygen}{11}{figure.caption.15}
+\contentsline {subsection}{\numberline {III.II}AQUA-MODIS data}{11}{subsection.0.3.2}
+\contentsline {subsection}{\numberline {III.III}Verification}{12}{subsection.0.3.3}
+\contentsline {section}{\numberline {IV}Conclusion}{13}{section.0.4}
+\contentsline {paragraph}{}{13}{section.0.4}
+\contentsline {section}{\numberline {V}References}{13}{section.0.5}

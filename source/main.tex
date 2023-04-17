@@ -1,0 +1,103 @@
+\documentclass[12pt]{report}
+% \usepackage[T1]{fontenc}
+\input{packages.tex}
+\input{math_.tex}
+\usepackage{caption}
+\usepackage{lipsum}
+\captionsetup{font = small, labelsep = period}
+
+\title{hb}
+% \author{Devansh Shukla}
+\date{\today}
+
+\fancyfoot[c]{\thepage}
+% \fancyfoot[r]{Devansh Shukla}
+
+\thickmuskip=5mu plus 5mu minus 1mu            % Space after = sign
+\medmuskip=8mu plus 2mu minus 3mu               % Space bt the Binary Operators
+\thinmuskip=8mu          % Space after the Integral and comma, uniary Operators, I guess
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\setlength{\columnsep}{.4in}
+
+\newcommand{\pagetitle}[1]{
+    \begin{center}
+        \textbf{{\LARGE#1}}
+    \end{center}
+}
+
+\begin{document}
+    \nocite{*}
+    \begin{titlepage}
+        \begin{center}
+            {\LARGE\textbf{MP456}} \\[10pt]
+            {\LARGE\textbf{Remote Sensing Fundamentals and Applications}} \\[50pt]
+            {\LARGE\textbf{ANALYSIS OF DISSOLVED OXYGEN}} \\[50pt]
+
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=0.25]{figs/SVNIT_Surat_Logo.png}
+            \end{figure}
+            \vspace*{2cm}
+            {\large\textbf{Devansh Shukla} \\[5pt]
+            I18PH021} \\
+            Integrated Masters Program - Physics
+            
+            \vspace*{2cm}
+            {\textbf{Department of Physics}} \\[10pt]
+            {Sardar Vallabhbhai National Institute of Technology}
+
+        \end{center}
+    \end{titlepage}
+    \newpage
+    \pagetitle{Acknowledgement}
+    \paragraph*{}
+    I take an immense pleasure in acknowledging the kind help and guidance provided by Dr. Kamlesh N. Pathak, Professor, Department of Physics, Sardar Vallabhbhai National Institite of Technology, Surat as my instructor for this Project.
+    
+    I would also like to acknowledge NASA Goddard Space Flight Center, Ocean Ecology Laboratory, Ocean Biology Processing Group; for their ocean color web dataset.
+
+    \textit{
+        \begin{flushright}
+            DEVANSH SHUKLA \\[5pt]
+            I18PH021
+        \end{flushright}
+    }
+    \small
+    \tableofcontents\newpage
+    % \begingroup
+    % \listoftables
+    % \let\clearpage\relax
+    % \listoffigures
+    % \endgroup
+    % \newpage
+
+    \section{Introduction}
+        \input{intro.tex}
+    \section{Data \& Methodology}
+        \input{data.tex}
+        \subsection{In-situ data: USGS WaterQualityWatch}
+            \input{usgs.tex}
+        \subsection{Remote data: Aqua-MODIS}
+            \input{aqua_modis.tex}
+        \subsection{Methodology}
+            \input{methodology}
+    
+    \section{Analysis}
+        \input{analysis.tex}
+        % \subsection{Data extraction}
+        % \subsection{Multiple Regression model}
+        % \subsection{Model accuracy}
+    \section{Conclusion}
+        \input{conclusion.tex}
+    
+    \section{References}
+        \input{references.tex}
+
+    % \bibliographystyle{IEEEtran}
+    % \bibliography{IEEEabrv,citations.bib}
+    % \cite{*}
+    % \bibliographystyle}
+    % \bibliography{abbrvnat, citations.bib}
+
+\end{document}
